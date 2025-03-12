@@ -13,9 +13,9 @@ This script imports malware family data from Malpedia's API into Markdown files 
 1. Clone this repository:
     `git clone https://github.com/yourusername/malpedia-importer.git cd malpedia-importer`
 2. Create a virtual environment:
-    ``python -m venv venv source venv/bin/activate (Linux)
+    `python -m venv venv source venv/bin/activate (Linux)`
 3. Install the required packages:
-    `pip install requests openpyxl
+    `pip install requests openpyxl`
 ## Usage
 1. Run the script:
     `python malpedia-to-md.py`
