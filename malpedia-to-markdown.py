@@ -239,7 +239,7 @@ def generate_markdown_file(family_id, family_info, attribution_map, base_output_
         # Description
         if description:
             f.write("## Description\n")
-            # Clean up description (replace \r\n with \n for consistency)
+
             clean_description = description.replace('\r\n', '\n')
             f.write(f"{clean_description}\n\n")
         
@@ -318,7 +318,7 @@ def main():
     existing_files_map = build_existing_files_map(base_output_dir)
     
     # Set up threading components
-    file_queue = queue.Queue(maxsize=100)  # Limit queue size to prevent memory issues
+    file_queue = queue.Queue(maxsize=100) 
     stop_event = threading.Event()
     global stats_lock
     stats_lock = threading.Lock()
